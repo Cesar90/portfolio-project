@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['django-bootcamp-ccordero.c9users.io']
 # Application definition
 
 INSTALLED_APPS = [
+    'blog.apps.BlogConfig',
     'jobs.apps.JobsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
