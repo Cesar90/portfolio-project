@@ -5,3 +5,28 @@ superuser
 username:test
 email:test@test.test
 password:django123
+
+
+***************
+python manage.py collecstatic
+
+Add static element to my project
+
+
+***************
+Main user for digital ocean
+password:django123
+
+users
+user:djangodeploy
+password:djangodeploy
+
+postgress user for digital ocean
+user:djangodbman
+password:django123
+
+ALTER ROLE djangodbman SET client_encoding TO 'utf8';
+ALTER ROLE djangodbman SET default_transaction_isolation TO 'read committed';
+ALTER ROLE djangodbman SET timezone TO 'UTC';
+
+GRANT ALL PRIVILEGES ON DATABASE portfoliodb TO djangodbman;
